@@ -10,40 +10,41 @@ availabilities	ArrayList<Integer>	Stores the number of available hours for each 
 
 cartServices	ArrayList<String>	Tracks which services the user has added to their cart.
 
-cartHours	ArrayList<Integer>	Tracks the number of hours booked for each service in the    
-                                                           cart.
+cartHours	ArrayList<Integer>	Tracks the number of hours booked for each service in the cart.
 
 choice	String	Stores the user's menu selection (1–4).
 
 matchedIndexes	ArrayList<Integer>	Temporarily stores indexes of services that match the selected category.
 
-selected, hoursToBook	int	Used to store use
+selected, hoursToBook    	int	      Used to store user input for selection and the number of hours to book.        
+                                                     
+
 
 
 1. Main Menu System
 Displayed in a while (true) loop until the user chooses to exit.
 
-Offers 4 options:
+ Offers 4 options:
 
-Add a service
+- Add a service
 
-Book a service
+- Book a service
 
-View cart and checkout
+- View cart and checkout
 
-Exit the program
+ - Exit the program
 
 
 2. Add a Service
 Prompts the user to input:
 
-Service name
+- Service name
 
-Category
+- Category
 
-Hourly rate
+- Hourly rate
 
-number of available hours
+- number of available hours
 
 
 3 Book a Service
@@ -53,9 +54,9 @@ Let the user choose a category, then filter and display matching services.
 
 For each matching service:
 
-Shows name, hourly rate, and availability.
+- Shows name, hourly rate, and availability.
 
-Marks services as "Fully Booked" if their available hours = 0.
+- Marks services as "Fully Booked" if their available hours = 0.
 
 Let the user book hours if available.
 
@@ -67,11 +68,11 @@ Lists all services in the cart.
 
 Shows:
 
-Name
+- Name
 
-Hours booked
+- Hours booked
 
-Cost (rate × hours)
+- Cost (rate × hours)
 
 Displays total cost.
 
