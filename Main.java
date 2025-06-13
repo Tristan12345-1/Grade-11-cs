@@ -58,7 +58,7 @@ public class Main {
                         System.out.println("- " + cat);
                     }
 
-                    System.out.print("Choose a category: ");
+                    System.out.println("Choose a category: ");
                     String selectedCategory = sc.nextLine();
 
                     ArrayList<Integer> matchedIndexes = new ArrayList<>();
@@ -76,8 +76,7 @@ public class Main {
                                 status = "Fully Booked";
                             }
 
-                            System.out.println((matchedIndexes.size()) + ". " + serviceNames.get(i)
-                                + " - $" + rates.get(i) + "/hr (" + status + ")");
+                            System.out.println((matchedIndexes.size()) + ". " + serviceNames.get(i) + " - $" + rates.get(i) + "/hr (" + status + ")");
                         }
                     }
 
