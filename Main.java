@@ -7,7 +7,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
         // Lists to store services and their details
-		ArrayList<String> serviceNames = new ArrayList<>();
+	ArrayList<String> serviceNames = new ArrayList<>();
         ArrayList<String> categories = new ArrayList<>();
         ArrayList<Double> rates = new ArrayList<>();
         ArrayList<Integer> availabilities = new ArrayList<>();
@@ -23,19 +23,19 @@ public class Main {
             System.out.println("2. Book a Service");
             System.out.println("3. View Cart and Checkout");
             System.out.println("4. Exit");
-            System.out.print("Choose an option: ");
+            System.out.println("Choose an option: ");
             String choice = sc.nextLine();
 
             // Use if / else if / else for menu options
             if (choice.equals("1")) {
                 // Add a service
-                System.out.print("Enter Service Name: ");
+                System.out.println("Enter Service Name: ");
                 String name = sc.nextLine();
-                System.out.print("Enter Category: ");
+                System.out.println("Enter Category: ");
                 String category = sc.nextLine();
-                System.out.print("Enter Hourly Rate: ");
+                System.out.println("Enter Hourly Rate: ");
                 double rate = sc.nextDouble();
-                System.out.print("Enter Available Hours: ");
+                System.out.println("Enter Available Hours: ");
                 int available = sc.nextInt();
 
                 // Store in lists
@@ -44,7 +44,7 @@ public class Main {
                 rates.add(rate);
                 availabilities.add(available);
 
-                System.out.println("Service \"" + name + "\" added successfully.");
+                System.out.println("Service " + name + " added successfully.");
 
             } else if (choice.equals("2")) {
                 // Book a service
@@ -95,7 +95,7 @@ public class Main {
                             if (availabilities.get(serviceIndex) == 0) {
                                 System.out.println("This service is fully booked.");
                             } else {
-                                System.out.print("Enter number of hours to book: ");
+                                System.out.println("Enter number of hours to book: ");
                                 int hoursToBook = sc.nextInt(); sc.nextLine();
 
                                 if (hoursToBook > availabilities.get(serviceIndex)) {
